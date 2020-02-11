@@ -1,0 +1,111 @@
+/**index.wxss**/
+
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  overflow-y: hidden;
+}
+
+.container {
+  flex-flow: column nowrap;
+  justify-content: top;
+  align-items: top;
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  flex: 0 0 40%;
+  width: 100%;
+  background: linear-gradient(#4990e2, #87c1f1);
+}
+
+.title {
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 10px;
+  font-weight: 200;
+}
+
+.visual {
+  width: 100%;
+}
+
+.temperature {
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 44px;
+  color: #fff;
+  vertical-align: middle;
+  padding-top: 10%;
+}
+
+.weathericon {
+  width: 50%;
+  float: left;
+}
+
+.list {
+  flex: 0 0 60%;
+  width: 100%;
+}
+
+.list_item {
+  background-color: #fff;
+  height: 75px;
+}
+
+.list_item_alter {
+  background-color: #f6f9fe;
+}
+
+.list_image {
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 10px;
+  float: left;
+}
+
+.list_weekday {
+  margin-top: 25px;
+  float: left;
+  margin-left: 10px;
+  color: #263344;
+}
+
+.list_t_lowest {
+  margin-top: 25px;
+  float: right;
+  color: #263344;
+}
+
+.list_t_highest {
+  margin-top: 25px;
+  float: right;
+  margin-left: 20px;
+  color: #263344;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.tips{
+  line-height: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
