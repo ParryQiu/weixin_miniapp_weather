@@ -6,7 +6,7 @@
 >
 >你只需要按照课程的流程来，就可以开发出一模一样的微信小程序，同时免费提供源码、天气预报数据接口、课程笔记等资源。
 >
->此系列课程将直接进入实战开发部分。
+>此系列课程将直接进入实战开发部分，微信小程序开发基础课程请参见 [60 节实战课 微信小程序开发视频教程 ](https://devopen.club/course/wxminiapp)。
 
 **课程地址:** [https://devopen.club/course/wxminiappweather](https://devopen.club/course/wxminiappweather)
 
