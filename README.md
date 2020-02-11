@@ -1,4 +1,4 @@
-# 微信天气预报小程序实战开发
+# 微信天气预报小程序实战开发视频教程 配套源码
 
 >此教程属于开发实战系列视频教程，基于之前发布的 「60 节微信小程序开发视频教程」，更新的第二阶段视频课程。
 >
@@ -8,9 +8,9 @@
 >
 >微信小程序开发基础课程请参见 [60节实战课 微信小程序开发视频教程](https://devopen.club/course/wxminiapp)。
 
-**课程地址:** [https://devopen.club/course/wxminiappweather](https://devopen.club/course/wxminiappweather)
+**课程地址: ** [https://devopen.club/course/wxminiappweather](https://devopen.club/course/wxminiappweather)
 
-## 1. 此系列视频课程包含
+## 1. 系列视频课程包含内容
 
 - 项目初始化
 - 页面 UI 开发
@@ -26,7 +26,7 @@
 
 你只需要按照课程的流程来，就可以开发出一模一样的微信小程序。
 
-## 2. 课程大纲
+## 2. 视频课程大纲
 
 - 001 - 课程简介与前置准备
 - 002 - 项目的初始化
