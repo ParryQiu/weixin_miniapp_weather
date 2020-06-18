@@ -51,8 +51,8 @@
 
 ## 3. 实战开发小程序 UI 设计图
 
-![](https://image.devopen.club/ui-weatherapp.jpg)
+<img src="https://image.devopen.club/ui-weatherapp.jpg" height="300px"/>
 
 ## 4. 开发完毕实际截图
 
-![](https://image.devopen.club/screenshot.png)
+<img src="https://image.devopen.club/screenshot.png" height="280px"/>
