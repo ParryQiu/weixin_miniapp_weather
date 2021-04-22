@@ -24,6 +24,7 @@ Page({
         const latitude = res.latitude;
         const longitude = res.longitude;
         wx.request({
+          // 获取到用户的经纬度信息之后，通过 API 请求转换成中文的地址，key 是对应的经纬度反转的 key
           url: 'https://api.gugudata.com/location/geodecode?appkey=' + app.globalData.gugudata_geodecode_apikey + '&longitude=' + longitude + '&latitude=' + latitude,
           header: {
             'content-type': 'application/json'
@@ -37,12 +38,14 @@ Page({
               location: res.data.Data[0].Township + ', ' + res.data.Data[0].District,
             });
             wx.request({
+              // 中文的地址，比如：朝阳区，请求天气预报的接口，获取到该区域的编码，对应天气预报的 key
               url: 'https://api.gugudata.com/weather/weatherinfo/region?appkey=' + app.globalData.gugudata_weatherinfo_apikey + '&keyword=' + res.data.Data[0].District.replace('区', ''),
               header: {
                 'content-type': 'application/json'
               },
               success(res) {
                 wx.request({
+                  // 根据获取到的区域编码，获取对应的 6 天的天气预报数据，对应天气预报的 key
                   url: 'https://api.gugudata.com/weather/weatherinfo?appkey=' + app.globalData.gugudata_weatherinfo_apikey + '&code=' + res.data.Data[0].Code + '&days=6',
                   header: {
                     'content-type': 'application/json'
