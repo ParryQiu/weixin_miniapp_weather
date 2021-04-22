@@ -11,7 +11,8 @@ App({
     }
 
     this.globalData = {
-      gugudataapikey: "YOUR_APP_KEY" // 请前往课程社区免费申请或前往 https://www.gugudata.com/ 申请
+      gugudata_geodecode_apikey: "your_app_key", // 请前往课程社区免费申请或前往 https://www.gugudata.com/ 申请
+      gugudata_weatherinfo_apikey: "your_app_key", // 请前往课程社区免费申请或前往 https://www.gugudata.com/ 申请
     }
   }
 })

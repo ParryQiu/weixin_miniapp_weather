@@ -23,9 +23,8 @@ Page({
       success(res) {
         const latitude = res.latitude;
         const longitude = res.longitude;
-        // console.log(longitude, latitude);
         wx.request({
-          url: 'https://api.gugudata.com/location/geodecode?appkey=' + app.globalData.gugudataapikey + '&longitude=' + res.longitude + '&latitude=' + res.latitude,
+          url: 'https://api.gugudata.com/location/geodecode?appkey=' + app.globalData.gugudata_geodecode_apikey + '&longitude=' + longitude + '&latitude=' + latitude,
           header: {
             'content-type': 'application/json'
           },
@@ -38,13 +37,13 @@ Page({
               location: res.data.Data[0].Township + ', ' + res.data.Data[0].District,
             });
             wx.request({
-              url: 'https://api.gugudata.com/weather/weatherinfo/region?appkey=' + app.globalData.gugudataapikey + '&keyword=' + res.data.Data[0].District.replace('区', ''),
+              url: 'https://api.gugudata.com/weather/weatherinfo/region?appkey=' + app.globalData.gugudata_weatherinfo_apikey + '&keyword=' + res.data.Data[0].District.replace('区', ''),
               header: {
                 'content-type': 'application/json'
               },
               success(res) {
                 wx.request({
-                  url: 'https://api.gugudata.com/weather/weatherinfo?appkey=' + app.globalData.gugudataapikey + '&code=' + res.data.Data[0].Code + '&days=6',
+                  url: 'https://api.gugudata.com/weather/weatherinfo?appkey=' + app.globalData.gugudata_weatherinfo_apikey + '&code=' + res.data.Data[0].Code + '&days=6',
                   header: {
                     'content-type': 'application/json'
                   },
@@ -113,6 +112,7 @@ Page({
     var weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
     return weekday[myddy];
   },
+  
   getWeatherIcon(weather) {
     switch (weather) {
       case "多云转中雨":
